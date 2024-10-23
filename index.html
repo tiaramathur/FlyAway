@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Finder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Find Your Perfect Flight</h1>
+    <form id="flightSearchForm">
+      <label for="homeAirport">Home Airport:</label>
+      <input type="text" id="homeAirport" name="homeAirport" placeholder="e.g., MIA (Miami International)" required>
+
+      <label for="destination">Destination:</label>
+      <input type="text" id="destination" name="destination" placeholder="e.g., JFK (New York)" required>
+
+      <label for="departureDate">Departure Date:</label>
+      <input type="date" id="departureDate" name="departureDate" required>
+
+      <label for="returnDate">Return Date:</label>
+      <input type="date" id="returnDate" name="returnDate" required>
+
+      <button type="submit">Search Flights</button>
+    </form>
+
+    <div id="results" class="results">
+      <!-- Flight results will be displayed here -->
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
